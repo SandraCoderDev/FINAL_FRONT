@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAdmin.css">
+    <title>Naves Espaciales</title>
+</head>
+
+<header>
+    <a href="index.html">
+        <button>Página principal</button>
+    </a>
+    <a href="api.html">
+        <button>Vía láctea</button>
+    </a>
+    <a href="admin.html">
+        <button>Vuelos</button>
+    </a>
+</header>
+
+<body>
+    <div class="date">Hoy es: <span id="fecha"></span></div>
+    <div class="principal">
+        <div class="centrado">
+            <h2>Vuelo espacial</h2>
+            <div class="input-group">
+                <input type="text" id="nombreVuelo" placeholder="Nombre del vuelo">
+                <input type="text" id="numeroVuelo" placeholder="Número del vuelo">
+                <input type="text" id="destinoVuelo" placeholder="Planeta de destino">
+                <button onclick="agregarVuelo()">Agregar Vuelo</button>
+            </div>
+            <div class="lista-vuelos" id="listaVuelos"></div> 
+
+            <!-- EJEMPLO DE CARD EXPLICATIVA -->
+            <div class="card">
+                <span>Apollo - St.3486 - Estado: Programado</span>
+                <div class="actions">
+                    <button title="Editar">✏️</button>
+                    <button title="Eliminar">🗑️</button>
+                    <button title="Cambiar Estado">🔄</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+
+</body>
+<footer>
+    <p>Desarrollado por Sandra Ordoñez. Todos los derechos reservados.</p>
+</footer>
+
+</html>
